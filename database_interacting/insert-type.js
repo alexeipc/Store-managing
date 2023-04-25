@@ -10,8 +10,6 @@ function insertTypeToDb(sentType, sentPrice) {
         var findobj = {type: `${sentType}`};
         var obj = {type: `${sentType}`, price: `${sentPrice}`};
 
-        var flag = true;
-
         dbo.collection(`${process.env.MONGO_TYPE_COLLECTION}`).find(findobj).toArray(function(err, res) {
             if (err) throw err;
             if (res.length === 0) {

@@ -19,6 +19,7 @@
     "fiber": "^1.0.4",
     "html5-qrcode": "^2.3.8",
     "http-server": "^14.1.1",
+    "https": "^1.0.0",
     "mongo": "^0.1.0",
     "mongodb": "^4.8.1",
     "morgan": "^1.10.0",

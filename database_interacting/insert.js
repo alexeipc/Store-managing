@@ -9,9 +9,7 @@ function insertToDb(sentId, sentType) {
 
         var obj = {type: `${sentType}`, id: sentId};
         var findObj = {id: sentId};
-
-        var flag = true;
-
+        
         dbo.collection(`${process.env.MONGO_PRODUCT_COLLECTION}`).find(findObj).toArray(function(err, res) {
             if (err) throw err;
             if (res.length === 0) {

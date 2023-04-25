@@ -5,8 +5,8 @@ productId = document.getElementById("id");
 
 const scanner = new Html5QrcodeScanner('reader', {
     qrbox: {
-        width: 250,
-        height: 250,
+        width: 300,
+        height: 300,
     },
     fps: 20,
 })
