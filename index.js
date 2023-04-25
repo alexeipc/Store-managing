@@ -149,6 +149,9 @@ app.get("/management", (req, res) => {
         });
     });
 });
+app.get("*", function(req,res) {
+    res.render("404.ejs")
+})
 
 // Socket listening
 io.on('connection', socket => {
